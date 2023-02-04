@@ -1,0 +1,10 @@
+.pbardiv{
+
+    border: solid 1px;
+    height: 20px;
+    
+}
+.pbar{
+    background-color: green !important;
+    height: 20px;
+}

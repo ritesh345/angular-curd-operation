@@ -1,0 +1,25 @@
+<h5>Update Employee</h5>
+
+<div>
+  <label>Name</label>
+  <input type="text" class="form-control" [(ngModel)]="name" />
+</div>
+
+<div>
+  <label>Address</label>
+  <textarea class="form-control" [(ngModel)]="address"></textarea>
+</div>
+<div>
+  <label>Contact</label>
+  <textarea class="form-control" [(ngModel)]="contact"></textarea>
+</div>
+<div>
+  <label>Email</label>
+  <textarea class="form-control" [(ngModel)]="email"></textarea>
+</div>
+
+<div class="my-2">
+  <button class="btn btn-warning btn-sm" (click)="onUpdateEmployee()">
+    Update
+  </button>
+</div>

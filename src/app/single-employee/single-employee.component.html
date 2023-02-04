@@ -1,0 +1,24 @@
+<div class="row">
+  <div *ngIf="employee">
+    <div>
+      <table>
+          <tbody>
+              
+              <tr><td class="ename">{{ employee.name }}</td><td class="eaddress">{{ employee.address }}</td><td class="econtact">{{ employee.contact }}</td><td class="eemail">{{ employee.email }}</td><td><button class="btn btn-warning btn-sm mx-1" (click)="onEditEmployee()">
+                Edit
+              </button></td><td><button class="btn btn-info btn-sm mx-1" (click)="onEmployeeSelect()">select</button></td></tr>
+          </tbody>
+      </table>
+  </div>
+
+
+    <!-- <div>
+      <button class="btn btn-warning btn-sm mx-1" (click)="onEditEmployee()">
+        Edit
+      </button>
+      <button class="btn btn-info btn-sm mx-1" (click)="onEmployeeSelect()">
+        Select
+      </button>
+    </div> -->
+  </div>
+</div>

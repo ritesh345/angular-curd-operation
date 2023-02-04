@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.ename {
+    width: 300px;
+}
+.eaddress {
+    width: 400px;
+}
+.econtact{
+    width:200px;
+}
+.eemail{
+    width:250px;
+}

@@ -1,0 +1,27 @@
+<h5>Add employee</h5>
+
+<div class="my-2">
+  <label>Name</label>
+  <input type="text" class="form-control" [(ngModel)]="name" />
+</div>
+
+<div class="my-2">
+  <label for="">Address</label>
+  <textarea class="form-control" [(ngModel)]="address"></textarea>
+</div>
+
+<div class="my-2">
+  <label>Contact</label>
+  <input type="text" class="form-control" [(ngModel)]="contact" />
+</div>
+
+<div class="my-2">
+  <label>Email</label>
+  <input type="text" class="form-control" [(ngModel)]="email" />
+</div>
+
+<div class="my-2">
+  <button class="btn btn-primary" (click)="onAddEmployee()">
+    Add employee
+  </button>
+</div>

@@ -1,0 +1,45 @@
+<div>
+    <p>Progress Bar</p>
+    <div class="pbardiv" style="width:1000px;">
+        <p class="pbar" style="width:0px"></p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <app-add-employee
+      (employeeAdded)="onEmployeeAdd($event)"
+    ></app-add-employee>
+  </div>
+</div>
+<div class="row">
+  <div>
+    <div class="row">   
+      <tr class="headertr"><th class="ename">Name</th><th class="eaddress">Address</th><th class="econtact">Contact</th><th class="eemail">Email</th></tr>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div >
+    <div class="row">
+      <app-single-employee
+        
+        *ngFor="let employee of employees"
+        [employee]="employee"
+        (employeeSelected)="onEmployeeSelected($event)"
+        (employeeEdited)="onEmployeeEdited($event)"
+      ></app-single-employee>
+    </div>
+  </div>
+  <div >
+    <app-view-employee
+      *ngIf="selectedEmployee"
+      [employee]="selectedEmployee"
+    ></app-view-employee>
+    <app-edit-employee
+      *ngIf="editEmployeeDetails"
+      [employee]="editEmployeeDetails"
+      (employeeUpdated)="onUpdateEmployee($event)"
+    ></app-edit-employee>
+  </div>
+</div>
